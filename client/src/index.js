@@ -5,11 +5,11 @@ import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
 import GlobalStyles from './styles/GlobalStyles';
 
-// Get the root element
+// Create root element for React 18
 const container = document.getElementById('root');
 const root = createRoot(container);
 
-// Render your app
+// Wrap our app with context providers and global styles
 root.render(
   <React.StrictMode>
     <AuthProvider>
